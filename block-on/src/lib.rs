@@ -32,11 +32,11 @@ fn test() {
         block_on({
             let one_sec = async {
                 sleep(Duration::from_secs(1)).await;
-                43
+                44
             };
             let half_sec = async {
                 sleep(Duration::from_millis(500)).await;
-                44
+                43
             };
             spawn(one_sec.race(half_sec))
         }),

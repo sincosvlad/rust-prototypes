@@ -263,6 +263,6 @@ mod formatting {
         assert_eq!(format!("{}", ninety),
                    "0 + 2i");
         assert_eq!(format!("{:#}", ninety),
-                   "2 ∠ 90°");
+                   "2 ∠ 45°");
     }
 }
